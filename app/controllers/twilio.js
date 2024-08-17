@@ -1,7 +1,7 @@
 const twilio = require('twilio');
 const dotenv = require('dotenv').config();
 
-const client = twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN, {username: "2FA"});
+const client = twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
 
 exports.createVerification = async (verifyPhone) => {
     console.log('verification');
