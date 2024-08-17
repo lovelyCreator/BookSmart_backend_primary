@@ -10,12 +10,12 @@ exports.sendMail = async(email, subject, content) => {
         var transporter = nodemailer.createTransport({
             service:'gmail',
             auth: {
-              user: process.env.USER,
-              pass: process.env.PASS,
+              user: "lovely7rh@gmail.com",
+              pass: "hkobgghzvfhsewxr",
             }
         });
         var mailOptions = {
-          from: process.env.USER,
+          from: "lovely7rh@gmail.com",
           to: email,
           subject: subject,
           html: content
